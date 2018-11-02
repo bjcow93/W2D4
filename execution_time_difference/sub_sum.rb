@@ -5,6 +5,7 @@
 #   subs.concat(subs.map{|el| el += [arr.last]})
 # end
 
+# O(n^2)
 def largest_contiguous_subsum_slow(array)
   result = []
 
@@ -23,6 +24,7 @@ def largest_contiguous_subsum_slow(array)
   max
 end
 
+# O(n) time complexity, O(1) space complexity
 def largest_contiguous_subsum_fast(array)
   curr_sum = array.first
   largest_sum = array.first
@@ -50,7 +52,7 @@ def largest_contiguous_subsum_fast(array)
   largest_sum
 end
 
-# their solution
+# their O(n) solution
 def largest_contiguous_subsum2(array)
   largest_sum = array.first
   curr_sum = array.first
