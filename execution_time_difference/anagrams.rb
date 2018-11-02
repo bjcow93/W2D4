@@ -39,6 +39,7 @@ end
 
 
 # time complexity is O(n)
+# space complexity is O(1) w/ only 26 different letters
 def fourth_anagram?(word1, word2)
   hash1 = Hash.new(0)
   hash2 = Hash.new(0)
